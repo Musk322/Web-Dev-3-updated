@@ -8,4 +8,4 @@ app.use(express.json()); //it handles the json data coming from the client//enco
 app.use("/api/students",studentRoutes);
 //app.use("/auth",LoginRoutes);
 
-app.listen(PORT, () => console.log("Server is running on port 3000"));
+app.listen(PORT, () => console.log("Server is running on port, 3000"));
