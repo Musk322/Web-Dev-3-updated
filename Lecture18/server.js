@@ -25,11 +25,11 @@ app.get("/:id", (req, res) => {
 
 });
 app.use((err, req, res, next) => {  //error middelware
-    res.status(500).json({ success: false, message: "Page not found" });
+    res.status(500).json({ success: false, message: err.message });
 })
 
 app.use((req, res) => {  //Invalid route middelware
-    res.status(404).json({ success: false, message: err.message });
+    res.status(404).json({ success: false, message: "page not found" });
 })
 
 
