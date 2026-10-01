@@ -34,5 +34,5 @@ app.use((req, res) => {  //Invalid route middelware
 
 
 app.listen(PORT, () => {
-    console.log(`server is running on port http://localhost:${PORT}`);
+    console.log(`server is running on http://localhost:${PORT}`);
 })
